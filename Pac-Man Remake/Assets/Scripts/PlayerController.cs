@@ -16,21 +16,17 @@ public class PlayerController : MonoBehaviour
         if (controller.isGrounded)
         {
             moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical"));
-            moveDirection = transform.TransformDirection(moveDirection);
             moveDirection *= speed;
 
             //Locks direction the player is facing so that it matches the direction the player is moving
-
-            //FIX THE CODE FOR THIS
             if (Input.GetKeyDown(KeyCode.UpArrow))
-                transform.forward = new Vector3(1f, 0f, 0f);
+                transform.forward = new Vector3(1f, 0f, 0f); //Faces North when UpArrow is pressed
             else if (Input.GetKeyDown(KeyCode.DownArrow))
-                transform.forward = new Vector3(-1f, 0f, 0f);
+                transform.forward = new Vector3(-1f, 0f, 0f); //Faces South when DownArrow is pressed
             else if (Input.GetKeyDown(KeyCode.LeftArrow))
-                transform.forward = new Vector3(0f, 0f, 1f);
+                transform.forward = new Vector3(0f, 0f, 1f); //Faces West when LeftArrow is pressed
             else if (Input.GetKeyDown(KeyCode.RightArrow))
-                transform.forward = new Vector3(0f, 0f, -1f);
-            //END
+                transform.forward = new Vector3(0f, 0f, -1f); //Faces East when RightArrow is pressed
         }
         moveDirection.y -= gravity * Time.deltaTime;
         controller.Move(moveDirection * Time.deltaTime);
