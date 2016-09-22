@@ -1,5 +1,11 @@
 ﻿using UnityEngine;
-using System.Collections;
+
+/// + = Add
+/// - = Remove
+/// 
+/// NOTES:
+/// + continuous movement
+/// + animations
 
 public class PlayerController : MonoBehaviour
 {
