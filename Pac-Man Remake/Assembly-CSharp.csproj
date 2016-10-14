@@ -45,7 +45,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\BasicCollectable.cs" />
      <Compile Include="Assets\Scripts\BlueGhostController.cs" />
      <Compile Include="Assets\Scripts\OrangeGhostController.cs" />
      <Compile Include="Assets\Scripts\PinkGhostController.cs" />
