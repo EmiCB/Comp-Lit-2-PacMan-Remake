@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
     public float gravity = 20.0F;
 
 	// Time that power pellet is effective
-	public float eatTime = 10.0f;
+	public float eatTime = 10.0F;
 
     // Sets the Text scoreText
     public Text scoreText;
@@ -56,9 +56,20 @@ public class PlayerController : MonoBehaviour
         controller.Move(moveDirection * Time.deltaTime);
     }
 
-    // Pickups
+    // When the game object touches something
     void OnTriggerEnter(Collider other)
     {
+		//Death
+		if (other.gameObject.CompareTag("Ghost")) 
+		{
+			// Adds ridiculous score
+			score = score + 10;
+
+			// Displays your current score
+			scoreText.text = "Score: " + score.ToString();
+		}
+
+		// Score system:
         // Picks up certain game objects with the "Pellet" tag
         if (other.gameObject.CompareTag("Pellet"))
         {
@@ -83,6 +94,8 @@ public class PlayerController : MonoBehaviour
             scoreText.text = "Score: " + score.ToString();
 
             //FINISH CODE TO ALLOW PLAYER TO EAT GHOSTS FOR A CERTAIN AMOUNT OF TIME
+		
+
 
         }
 
