@@ -46,10 +46,12 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\BlueGhostController.cs" />
+     <Compile Include="Assets\Scripts\LeftToRightTP.cs" />
      <Compile Include="Assets\Scripts\OrangeGhostController.cs" />
      <Compile Include="Assets\Scripts\PinkGhostController.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\RedGhostController.cs" />
+     <Compile Include="Assets\Scripts\RightToLeftTP.cs" />
      <Compile Include="Assets\Scripts\_GameController.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
