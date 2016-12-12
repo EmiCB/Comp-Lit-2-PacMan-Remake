@@ -46,7 +46,10 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\BlueGhostController.cs" />
+     <Compile Include="Assets\Scripts\CameraController.cs" />
+     <Compile Include="Assets\Scripts\Cameras.cs" />
      <Compile Include="Assets\Scripts\LeftToRightTP.cs" />
+     <Compile Include="Assets\Scripts\LightController.cs" />
      <Compile Include="Assets\Scripts\OrangeGhostController.cs" />
      <Compile Include="Assets\Scripts\PinkGhostController.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
