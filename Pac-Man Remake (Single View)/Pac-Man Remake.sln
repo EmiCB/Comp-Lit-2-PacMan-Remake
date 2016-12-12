@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{EC375E27-E18D-71D1-9C3C-A0D15F4794F7}") = "Pac-Man Remake", "Assembly-CSharp.csproj", "{0855D3EF-6709-F595-8645-60750A7BDC8B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0855D3EF-6709-F595-8645-60750A7BDC8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0855D3EF-6709-F595-8645-60750A7BDC8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0855D3EF-6709-F595-8645-60750A7BDC8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0855D3EF-6709-F595-8645-60750A7BDC8B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
